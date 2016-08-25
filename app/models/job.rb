@@ -1,4 +1,4 @@
 class Job < ApplicationRecord
-	#attr_accessible :description, :title, :premium
+	has_many :comments
 	validates_presence_of :description, :title
 end
